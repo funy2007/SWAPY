@@ -430,13 +430,13 @@ if __name__ == '__main__':
     c5 = CodeSnippet(None, '', 'button1.Click()')
     cm = CodeManager()
 
-    print c1
+    print(c1)
     [cm.add(i) for i in [c1, c2, c3, c4, c5]]
 
-    print id(c2)
-    print cm
+    print(id(c2))
+    print(cm)
 
     c2.update('button1 = the_change', 'the_change.Click()',
                      'del the_change')
-    print id(c2)
-    print cm
+    print(id(c2))
+    print(cm)
